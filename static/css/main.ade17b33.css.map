@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.ade17b33.css","mappings":"AAAA,aAEE,UAAW,CADX,WAEF,CAEA,WACE,iBACF","sources":["index.css"],"sourcesContent":["input, button {\n  padding: 5px;\n  margin: 5px;\n}\n\n.removeCol {\n  margin-right: 30px;\n}"],"names":[],"sourceRoot":""}

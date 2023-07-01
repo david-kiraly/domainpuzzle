@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/domainpuzzle/static/css/main.ade17b33.css",
+    "main.js": "/domainpuzzle/static/js/main.bea07e37.js",
+    "static/js/787.91828ec5.chunk.js": "/domainpuzzle/static/js/787.91828ec5.chunk.js",
+    "index.html": "/domainpuzzle/index.html",
+    "main.ade17b33.css.map": "/domainpuzzle/static/css/main.ade17b33.css.map",
+    "main.bea07e37.js.map": "/domainpuzzle/static/js/main.bea07e37.js.map",
+    "787.91828ec5.chunk.js.map": "/domainpuzzle/static/js/787.91828ec5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ade17b33.css",
+    "static/js/main.bea07e37.js"
+  ]
+}
