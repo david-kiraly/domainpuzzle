@@ -92,6 +92,10 @@ function App() {
             inputs[r] = [...inputs[r], '']
             setInputs([...inputs])
           }}>+ col</button>
+          <button onClick={() => {
+            inputs.splice(r, 1)
+            setInputs([...inputs])
+            }}>- row</button>
         </div>
       )}
       <button onClick={() => { setInputs([...inputs, [['']]]) }}>+ row</button>
