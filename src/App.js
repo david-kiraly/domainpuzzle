@@ -72,6 +72,11 @@ function App() {
     navigator.clipboard.writeText(m.replace(/<br\s*[\/]?>/gi, "\n"))
   }
 
+  const reset = () => {
+    setInputs([['']])
+    setResult('')
+  }
+
   return (
     <div>
       {inputs.map((row, r) =>
@@ -102,6 +107,9 @@ function App() {
       <br />
       <br />
       <button onClick={() => calc()}>Calc</button>
+      <br />
+      <br />
+      <button onClick={() => reset()}>Reset</button>
       <div dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
   )
