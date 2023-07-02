@@ -1,8 +1,7 @@
 {
   "name": "neob",
   "version": "0.1.0",
-  "homepage": "https://david-kiraly.github.io/domainpuzzle",
-  "private": true,
+  "homepage": "https://domainpuzzle.vercel.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
