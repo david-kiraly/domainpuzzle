@@ -111,7 +111,7 @@ function App() {
       )}
       <button onClick={() => calc()}>Go</button>
       <button onClick={() => reset()}>Reset</button>
-      <div dangerouslySetInnerHTML={{ __html: result }}></div>
+      <div className={`result`} dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
   )
 }

@@ -27,3 +27,7 @@ button {
 .row {
   display: inline;
 }
+
+.result, input {
+  text-transform: lowercase;
+}
