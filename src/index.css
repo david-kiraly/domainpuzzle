@@ -30,6 +30,11 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.row {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .col {
   display: inline-block;
   margin-right: 7px;

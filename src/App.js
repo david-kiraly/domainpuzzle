@@ -80,7 +80,7 @@ function App() {
   return (
     <div>
       {inputs.map((row, r) =>
-        <div key={r} style={{ display: 'block' }}>
+        <div key={r} className={`row`}>
           {row.map((col, c) =>
             <div className={`col`} key={c}>
               <input value={col} onChange={e => {
