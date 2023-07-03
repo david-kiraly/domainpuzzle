@@ -1,33 +1,43 @@
 input, button {
-  padding: 5px;
-  margin: 5px;
-}
-
-.removeCol {
-  margin-right: 30px;
+  padding: 3px;
+  margin: 3px;
 }
 
 input {
   width: 70px;
   outline: none;
+  border: none;
 }
 
 button {
-  padding: 5px 8px;
+  padding: 3px 6px;
   color: #fff;
   background-color: #154fc4;
   border: none;
   border-radius: 3px;
 }
 
+.actionBtn {
+  padding: 6px 10px;
+  margin: 10px 10px 0 0;
+}
+
+.resetBtn {
+  background-color: red;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.row {
-  display: inline;
+.col {
+  display: inline-block;
+  margin-right: 7px;
+  background-color: #bbb;
+  border-radius: 3px;
 }
 
 .result, input {
   text-transform: lowercase;
+  color: #aaa;
 }

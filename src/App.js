@@ -82,7 +82,7 @@ function App() {
       {inputs.map((row, r) =>
         <div key={r} style={{ display: 'block' }}>
           {row.map((col, c) =>
-            <div className={`row`} key={c}>
+            <div className={`col`} key={c}>
               <input value={col} onChange={e => {
                 inputs[r][c] = e.target.value
                 setInputs([...inputs])
@@ -109,8 +109,8 @@ function App() {
           }}>+Ra</button>
         </div>
       )}
-      <button onClick={() => calc()}>Go</button>
-      <button onClick={() => reset()}>Reset</button>
+      <button className={`actionBtn`} onClick={() => calc()}>Go</button>
+      <button className={`actionBtn resetBtn`} onClick={() => reset()}>Reset</button>
       <div className={`result`} dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
   )
