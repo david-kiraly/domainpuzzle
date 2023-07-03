@@ -80,9 +80,9 @@ function App() {
   return (
     <div>
       {inputs.map((row, r) =>
-        <div style={{ display: 'block' }}>
+        <div key={r} style={{ display: 'block' }}>
           {row.map((col, c) =>
-            <div style={{display:'inline'}}>
+            <div className={`row`} key={c}>
               <input value={col} onChange={e => {
                 inputs[r][c] = e.target.value
                 setInputs([...inputs])
@@ -90,25 +90,26 @@ function App() {
               <button className="removeCol" onClick={() => {
                 inputs[r].splice(c, 1)
                 setInputs([...inputs])
-              }}>- col</button>
+              }}>-C</button>
             </div>
           )}
           <button onClick={() => {
             inputs[r] = [...inputs[r], '']
             setInputs([...inputs])
-          }}>+ col</button>
+          }}>+C</button>
           <button onClick={() => {
             inputs.splice(r, 1)
             setInputs([...inputs])
-            }}>- row</button>
+          }}>-R</button>
+          <button onClick={() => {
+            setInputs([...inputs.slice(0, r), [['']], ...inputs.slice(r)])
+          }}>+Rb</button>
+          <button onClick={() => {
+            setInputs([...inputs.slice(0, r + 1), [['']], ...inputs.slice(r + 1)])
+          }}>+Ra</button>
         </div>
       )}
-      <button onClick={() => { setInputs([...inputs, [['']]]) }}>+ row</button>
-      <br />
-      <br />
-      <button onClick={() => calc()}>Calc</button>
-      <br />
-      <br />
+      <button onClick={() => calc()}>Go</button>
       <button onClick={() => reset()}>Reset</button>
       <div dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
