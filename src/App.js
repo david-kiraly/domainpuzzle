@@ -77,6 +77,12 @@ function App() {
     setResult('')
   }
 
+  const fillWithHvac = () => {
+    setInputs([['klima', 'legkondi'], ['', '-'], ['szerviz', 'szerelo', 'szereles', 'javitas', 'tisztitas', 'karbantartas'], ['.hu']])
+  }
+
+  
+
   return (
     <div>
       {inputs.map((row, r) =>
@@ -111,6 +117,7 @@ function App() {
       )}
       <button className={`actionBtn`} onClick={() => calc()}>Go</button>
       <button className={`actionBtn resetBtn`} onClick={() => reset()}>Reset</button>
+      { inputs[0][0] == 'hvac' && <button className={`actionBtn HvacBtn`} onClick={() => fillWithHvac()}>HVAC</button> }
       <div className={`result`} dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
   )
