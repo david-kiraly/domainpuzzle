@@ -118,7 +118,7 @@ function App() {
       <button className={`actionBtn`} onClick={() => calc()}>Go</button>
       <button className={`actionBtn resetBtn`} onClick={() => reset()}>Reset</button>
       <button className={`actionBtn`} onClick={() => window.open("https://my.eurodns.com/das/search", "_blank")}>Bulk Search</button>
-      { inputs[0][0] == 'hvac' && <button className={`actionBtn HvacBtn`} onClick={() => fillWithHvac()}>HVAC</button> }
+      { inputs[0][0].toLowerCase() == 'hvac' && <button className={`actionBtn HvacBtn`} onClick={() => fillWithHvac()}>HVAC</button> }
       <div className={`result`} dangerouslySetInnerHTML={{ __html: result }}></div>
     </div>
   )
